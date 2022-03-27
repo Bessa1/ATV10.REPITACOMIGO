@@ -1,0 +1,33 @@
+    
+<html>
+
+    <head>
+        <script>
+    
+    //5 - Faça um algoritmo que calcule e escreva a média aritmética dos 
+    //números inteiros informados pelo usuário.
+    // Considere que o primeiro sempre será menor que o segundo.
+    
+
+        var num1 = parseFloat(prompt("Insira um valor."));
+        var num2 = parseFloat(prompt("Insira um valor"));
+        var soma = num1 + num2;
+        
+
+        while(num1 > num2){
+            alert("O primeiro número não pode ser maior que o segundo, insira novamente.")
+            var num1 = parseFloat(prompt("Insira um valor."));
+        }
+
+        document.write(`A média dos valores informados (${num1} e ${num2}) é: ${(num1 + num2) / 2}.`);
+
+
+            
+        </script>
+    
+        </head>
+    
+    
+            <body>
+            </body>
+    </html>
