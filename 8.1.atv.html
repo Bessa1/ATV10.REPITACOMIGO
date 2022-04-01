@@ -1,0 +1,53 @@
+    
+<html>
+
+    <head>
+        <script>
+    
+    //8 - Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno,
+    // calcule e imprima a média (simples) desse aluno.
+    // Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota.
+    //
+    //Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido,
+    // deve ser solicitado um novo valor ao usuário. 
+
+            var res = "sim"
+            var aprovado = 0;
+            var reprovado = 0;
+    
+            while(res == "sim"){
+                var n1 = parseFloat(prompt("Digite a nota 1a"));
+                var n2 = parseFloat(prompt("Digite a nota 2a"));
+                var media = (n1 + n2) / 2
+   
+
+                if(n1 & n2 < 0){
+             alert("Digite um numero de 0 a 10!")
+                } else if(n1 & n2 >10){
+             alert("Digite um numero de 0 a 10!")
+                }
+                var res = prompt("Digite (sim) para refazer o calculo ou (não) para visualizar a média");
+                var res = res.toLocaleLowerCase();
+
+            }
+                document.write("A média do aluno é: " + media);
+
+        
+  
+
+
+
+
+
+
+
+
+            
+        </script>
+    
+        </head>
+    
+    
+            <body>
+            </body>
+    </html>

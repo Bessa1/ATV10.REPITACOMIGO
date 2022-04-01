@@ -1,0 +1,40 @@
+    
+<html>
+
+    <head>
+        <script>
+    
+   // 4 - Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre
+   // 15 (inclusive) e 100 (inclusive).
+    
+
+
+var dentro_intervalo = 0;
+var fora_intervalo = 0;
+var contagem = 0;
+var array1 = [];
+while (contagem <= 10){
+    var numero = parseInt(prompt("Numero"));
+if(numero >= 24 && numero <= 42){
+    dentro_intervalo = dentro_intervalo  + 1;
+    array1.push(numero);
+}
+ else{
+    fora_intervalo = fora_intervalo + 1;
+
+}
+contagem++;
+
+}
+document.write("Quantidade de números dentro do limite:" + dentro_intervalo +"</br>");
+document.write("Esses foram os número digitados pelo úsuário: " + array1);
+console.log(dentro_intervalo, fora_intervalo);
+        
+        </script>
+    
+        </head>
+    
+    
+            <body>
+            </body>
+    </html>
